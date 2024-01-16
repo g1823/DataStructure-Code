@@ -9,3 +9,4 @@
     本章介绍线性表相关的内容。
 - SequentialList：线性表的实现-顺序表
 - LinkedList：线性表的实现-链表
+- GeneralizedList：广义表的一般定义

@@ -46,7 +46,7 @@ public class LinkedList<T> implements MyList<T> {
     }
 
     /**
-     * 获取index下标的元素节点Node
+     * 获取index下标的元素结点Node
      *
      * @param index 待获取位置下标
      * @return 该下标的值Node，没有该下标的值时返回null。
@@ -73,16 +73,16 @@ public class LinkedList<T> implements MyList<T> {
 
     @Override
     public void add(int index, T value) {
-        // 创建新的节点
+        // 创建新的结点
         Node dataNode = new Node();
         dataNode.data = value;
-        // 插入位置为第一个节点
+        // 插入位置为第一个结点
         if (index == 0) {
             dataNode.next = firstNode;
             firstNode = dataNode;
             return;
         }
-        // 获取待插入节点的上一个节点
+        // 获取待插入结点的上一个结点
         Node temNode = getNode(index - 1);
         if (temNode != null) { // 插入
             dataNode.next = temNode.next;
