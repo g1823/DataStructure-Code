@@ -15,3 +15,4 @@
 - [stack](chapter02_linearList%2Fstack)：堆栈
   - [PostfixExpression.java](chapter02_linearList%2Fstack%2FPostfixExpression.java)：引入栈-后缀表达式
   - [SequentialStack.java](chapter02_linearList%2Fstack%2FSequentialStack.java)：堆栈的顺序实现
+  - [LinkedStack.java](chapter02_linearList%2Fstack%2FLinkedStack.java)：堆栈的链式实现

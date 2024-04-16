@@ -19,23 +19,25 @@ public class StackMain {
 
         System.out.println("--------------堆栈线性实现测试--------------");
         // 堆栈线性实现测试
-        SequentialStack<Integer> sequentialStack = new SequentialStack<>(3);
-        if (sequentialStack.isEmpty()) {
+        //MyStack<Integer> myStack = new SequentialStack<>(3);
+        // 堆栈链式实现测试
+        MyStack<Integer> myStack = new LinkedStack<>();
+        if (myStack.isEmpty()) {
             System.out.println("栈为空");
         }
-        sequentialStack.push(1);
-        if (sequentialStack.isFull()) {
+        myStack.push(1);
+        if (myStack.isFull()) {
             System.out.println("栈已满");
         } else {
             System.out.println("栈还未满");
         }
-        sequentialStack.push(2);
-        sequentialStack.push(3);
-        sequentialStack.push(4);
-        System.out.println(sequentialStack.peek());
-        System.out.println(sequentialStack.pop());
-        System.out.println(sequentialStack.pop());
-        System.out.println(sequentialStack.pop());
-        System.out.println(sequentialStack.pop());
+        myStack.push(2);
+        myStack.push(3);
+        myStack.push(4);
+        System.out.println(myStack.peek());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
+        System.out.println(myStack.pop());
     }
 }
