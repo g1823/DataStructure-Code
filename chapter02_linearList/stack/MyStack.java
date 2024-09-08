@@ -13,21 +13,21 @@ public interface MyStack<T> {
      *
      * @return 栈内元素是否已满
      */
-    public boolean isFull();
+    boolean isFull();
 
     /**
      * 向栈中推入一个元素
      *
      * @param item 带入栈元素
      */
-    public void push(T item);
+    void push(T item);
 
     /**
      * 判断一个栈是否为空
      *
      * @return 是否为空
      */
-    public boolean isEmpty();
+    boolean isEmpty();
 
     /**
      * 取出栈顶元素
